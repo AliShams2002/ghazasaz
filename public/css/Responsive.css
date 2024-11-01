@@ -1,0 +1,482 @@
+/*-------------------------------
+
+    Responsive For Small Laptop(1088px)
+
+-------------------------------*/
+@media (max-width: 68em) {
+    html{
+        font-size: 56.25%;
+    }
+    .list-nav li{
+        padding: 0.8rem 1rem;
+    }
+    .list-nav li:last-child{
+        padding: 0.8rem 2.4rem;
+    }
+    .section-hero{
+        background-color: #fdf2e9;
+        padding: 4.8rem 0 3.2rem; 
+    }
+    .heading-primary{
+        font-size: 4rem;
+        
+    }
+    .hero-img-box img{
+        width: 100%;
+    }
+    .delivered-imgs img{
+        width: 35px;
+        height: 35px;
+    }
+    .delivered-text{
+        font-size: 1.6rem;
+    }
+    .number-text{
+        font-size: 6.4rem;
+    }
+    .section-testimonials{
+        padding: 9.6rem 1.8rem;
+    }
+    .testimonial-title{
+        padding: 0 3.2rem 0 6.4rem;
+    }
+    .img-gallery{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+    .container{
+        padding: 0 6rem;
+    }
+    .catagoris-item img{
+        height: 120px;
+    }
+    .splide__list{
+        gap: 1rem;
+    }
+    .food-item img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/*-------------------------------
+
+    Responsive For tablets(944px)
+
+-------------------------------*/
+@media (max-width: 59em) {
+    html{
+        font-size: 50%;
+    }
+    .list-nav{
+        gap: 1.8rem;
+    }
+    .list-nav li a{
+        font-size: 1.8rem;
+    }
+    .hero{
+        gap: 5.8rem;
+        padding: 0 3.6rem;
+    }
+    .brand-img img{
+        height: 3.2rem;
+    }
+    .work-title h2{
+        font-size: 3.6rem;
+    }
+    .how-title{
+        font-size: 2.8rem;
+        margin-top: 1.2rem;
+    }
+    .how-description{
+        font-size: 1.6rem;
+    }
+    .title-section h2{
+        font-size: 3.6rem;
+    }
+    .img-gallery{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .img-gallery img{
+       aspect-ratio: 1/1;
+    }
+    .container{
+        padding: 0 4rem;
+    }
+
+    .food-item img{
+        width: 100px;
+        height: 100px;
+    }
+    .cta-img-box img{
+        max-height: 400px;
+    }
+}
+
+
+/*-------------------------------
+
+    Responsive For Tblet Landescap(798px)
+
+-------------------------------*/
+@media (max-width: 49em) {
+    html{
+        font-size: 43.75%;
+    }
+    .container{
+        width: 100%;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+        padding: 0 3.2rem;
+    }
+    .heading-primary{
+        font-size: 4.4rem;
+        text-align: center;
+    }
+    .hero-description{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .hero-btn-box{
+        justify-content: center;
+    }
+    .delivered-meals{
+        justify-content: center;
+    }
+    .hero-img-box img{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .how-description{
+        font-size: 1.8rem;
+    }
+    .section-testimonials{
+        grid-template-columns: 1fr;
+    }
+    .testimonial{
+        gap: 4.8rem;
+    }
+    .img-gallery{
+        grid-template-columns: repeat(6,1fr);
+        gap: 1rem;
+    }
+    .pricing-item{
+        width: auto;
+        padding: 1rem;
+    }
+    .item-price{
+        font-size: 3.8rem;
+    }
+    .item-price span{
+        font-size: 2.0rem;
+    }
+    .cta{
+        grid-template-columns: 2fr 3fr;
+    }
+    .cta-text-box{
+        padding: 3.6rem 4.4rem 5.8rem;
+    }
+    .heading-cta{
+        font-size: 3.6rem;
+    }
+    .cta-text{
+        font-size: 1.6rem;
+    }
+    .cta-form{
+        grid-template-columns: 1fr;
+    }
+    .cta-img-box{
+        background-position: center;
+    }
+    .catagoris-list{
+        gap: 1;
+    }
+    .catagoris-item img{
+        height: 80px;
+    }
+    .splide__track{
+        padding: 1rem;
+    }
+}
+
+/*-------------------------------
+
+    Responsive For small Tblet (608px)
+
+-------------------------------*/
+
+@media (max-width: 38em) {
+    .hero-img-box img{
+        width: 60%;
+    }
+    .brand-img img{
+        height: 2.4rem;
+    }
+    .title-section h2{
+        font-size: 3.2rem;
+    }
+    .work-title{
+        margin-bottom: 5.8rem;
+    }
+    .grid {
+        row-gap: 6.4rem;
+        column-gap: 4.4rem;
+    }
+    .grid--3-cols{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .grid--4-cols{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3.2rem;
+        column-gap: 2.4rem;
+    }
+    .item{
+        grid-column: span 2;
+    }
+    .rgyme-food-item{
+        grid-column: 2/4;
+    }
+    .testimonial-title h2{
+        margin-bottom: 6.4rem;
+    }
+    .tax-title{
+        margin-bottom: 4.8rem;
+    }
+    .feature{
+        padding: 2.4rem 0;
+    }
+    .footer-section{
+        padding: 8rem 0;
+    }
+    .grid--5--cols{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .nav-col{
+        grid-row: 1;
+        grid-column: span 2;
+    }
+    .logo-col , .address-col{
+        grid-column: span 3;
+    }
+    .pricing-items{
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    .pricing-item{
+        width: 100%;
+    }
+    .cta-img-box img{
+        height: 350px;
+    }
+    .food-item{
+        padding: 0;
+    }
+    .food-info{
+        padding: 0 ;
+    }
+    .splide__track{
+        padding: 1rem 0;
+    }
+    .food-info{
+        padding: 0 2rem 3rem;
+        gap: 1rem;
+    }
+
+    /* menu nav */
+    .header{
+        flex-direction: row-reverse;
+    }
+    .btn-mobile-nav{
+        display: block;
+        z-index: 10;
+    }
+    .icon-mobile-nav[name="close-outline"]{
+        display: none;
+    }
+    .btn-mobile-nav{
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .icon-mobile-nav{
+        width: 4rem;
+        height: 4rem;
+        color: #333;
+    }
+    .list-nav{
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: all 0.5s;
+        transform: translateX(100%);
+    }
+    .nav-open .list-nav{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .nav-open .icon-mobile-nav[name="menu-outline"]{
+        display: none;
+    }
+    .nav-open .icon-mobile-nav[name="close-outline"]{
+        display: block;
+    }
+    .list-nav{
+        flex-direction: column;
+        justify-content: center;
+        gap: 3.2rem;
+    }
+    .list-nav li a{
+        font-size: 3rem;
+    }
+    .catagoris-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .catagoris-item img{
+        height: 100%;
+    }
+    .splide__track{
+        padding: 0 1rem;
+    }
+    .splide__list{
+        padding: 0 2rem;
+    }
+    .food-item img{
+        width: 120px;
+        height: 90px;
+    }
+    .cta{
+        grid-template-columns: 1fr;
+    }
+    .cta-img-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/*-------------------------------
+
+    Responsive For small Tblet (544px)
+
+-------------------------------*/
+
+@media (max-width: 34em) {
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols,
+    .grid--5--col{
+        grid-template-columns: 1fr;
+    }
+    .grid {
+        row-gap: 4.8rem;
+        column-gap: 4.4rem;
+    }
+    .container{
+        padding: 0 1rem;
+    }
+    .hero{
+        padding: 0 1.8rem;
+    }
+    .hero-img-box img{
+        width: 80%;
+    }
+    .brand-img img{
+        height: 1.8rem;
+    }
+    .how-img-box:nth-child(2){
+        grid-row: 1;
+    }
+    .how-img-box:nth-child(6){
+        grid-row: 5;
+    }
+    .how-img-box{
+        transform: translateY(4.8rem);
+    }
+    .title-section{
+        padding: 0 0.8rem;
+    }
+    .item{
+        grid-column: 1;
+    }
+    .splide__track{
+        padding: 1rem 0;
+    }
+    .food-info{
+        padding: 0 2rem 3rem;
+        gap: 1rem;
+    }
+    .rgyme-food-item{
+        grid-column: 1;
+        padding: 0 2.4rem;
+        margin: 0 auto;
+    }
+    .testimonial{
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+    }
+    .testimonial-title h2{
+        font-size: 3.6rem;
+    }
+    .img-gallery{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .work-title h2{
+        font-size: 3.2rem;
+    }
+    .first-pricing-item ,.secend-price-item{
+        justify-self: center;
+        width: 90%;
+    }
+    .cta{
+        grid-template-columns: 1fr;
+    }
+    .cta-text-box{
+        padding: 3.2rem;
+    }
+    .catagoris-list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    .catagoris-item img{
+        height: 110px;
+    }
+    .food-info{
+        padding: 0 1rem 1rem;
+    }
+    .food-item img{
+        width: 100px;
+        height: 80px;
+    }
+    .pricing-items{
+        grid-template-columns: 1fr;
+    }
+    .cta{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .cta-img-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cta-img-box img{
+        height: 370px;
+        background-size: cover;
+    }
+}

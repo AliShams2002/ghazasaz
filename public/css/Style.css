@@ -1,0 +1,685 @@
+html{
+    scroll-behavior: smooth;
+    background-color: #fafafa;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*------------------
+    Header section
+------------------*/
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9.6rem;
+}
+.img-logo{
+    height: 4.4rem;
+}
+.list-nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.list-nav li{
+    padding: 1rem 2rem;
+}
+
+.main-nav-link{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #1b1b1b;
+    transition: 0.3s;
+}
+.list-nav li a:hover{
+    color: #40c057;
+}
+.free-nav-link{
+    padding: 1rem 2rem;
+    background-color: #40c057;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #f3f3f3;
+}
+.free-nav-link:hover {
+    background-color: rgb(7, 110, 79);
+    transition: 0.3s;
+}
+.btn-mobile-nav{
+    display: none;
+}
+.sticky .header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 9;
+    background: rgba(255,255,255,0.97);
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 1.2rem 3.2rem rgba(0,0,0,0.03);
+}
+.sticky .section-hero {
+    margin-top: 9.6rem;
+}
+
+/*------------------
+    HERO Main section
+------------------*/
+
+/* .section-hero{
+    padding: 4.8rem 0 3.2rem 0; 
+} */
+.hero{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+.hero-img-box img{
+    max-height: 500px;
+}
+.heading-primary{
+    font-size: 4.4rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+    color: #1b1b1b;
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+}
+.hero-description{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 4.8rem;
+    color: #333;
+}
+.hero-btn-box{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 0.8rem 3.2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-bottom: 3.2rem;
+    cursor: pointer;
+}
+.btn--full{
+    background-color: var(--primery);
+    color: #fff;
+}
+.btn--full:hover{
+    background-color: rgb(7, 110, 79);
+}
+.btn--outline{
+    background-color: transparent;
+    color: #555;
+    margin-right: 10px;
+}
+.btn--outline:hover{
+    box-shadow: inset 0 0 0 2px #fff;
+}
+.delivered-meals{
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+.delivered-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delivered-imgs img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: -10px;
+    border: 2px solid #fff;
+}
+.delivered-imgs img:first-child{
+    margin-right: 0;
+}
+.delivered-text{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+}
+.delivered-text span{
+    color: var(--primery);
+}
+
+/*------------------
+    BRAND Main section
+------------------*/
+.fetured{
+    margin-top: 7rem;
+}
+.brand-container h2{
+    display: block;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 4.8rem;
+    text-align: center;
+}
+.brand-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.brand-img img{
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 0.5;
+}
+
+/*-------------------------
+    Catagories Item
+--------------------------*/
+
+.catagoris-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 7rem;
+
+}
+.catagoris-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.catagoris-item{
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    padding: 1.8rem 2.8rem;
+    font-size: 1.8rem;
+    border-radius: 9px;
+    box-shadow: rgba(172, 172, 172, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.catagoris-item img{
+    max-height: 180px;
+    max-width: 180px;
+    height: auto;
+    padding: 2rem;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+}
+
+.catagoris-item a {
+    text-decoration: none;
+    color: #40c057;
+}
+
+/*-------------------------
+    How it works SECTION
+--------------------------*/
+.how-it-work{
+    margin-top: 7rem;
+}
+.work-title{
+    margin-bottom: 6rem;
+}
+.work-title span{
+    font-size: 1.8rem;
+    color: var(--primery);
+    letter-spacing: 1.5px;
+}
+.work-title h2{
+    font-size: 4.4rem;
+    letter-spacing: -1px;
+    color: #1b1b1b;
+}
+.number-text{
+    font-size: 9.6rem;
+    font-weight: 500;
+    color: #ddd;
+    margin-bottom: -3.5rem;
+}
+.how-title{
+    font-size: 3.2rem;
+    color: #1b1b1b;
+    margin-bottom: 3.2rem;
+}
+.how-description{
+    font-size: 1.8rem;
+    color: #1b1b1b;
+    line-height: 1.8;
+}
+
+.how-img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.how-img-box::before,
+.how-img-box::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+.how-img-box::before{
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+}
+.how-img-box::after{
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: #fae5d3;
+}
+.how-img-box img{
+    width: 35%;
+}
+
+/*-------------------------
+    FOOD SECTION
+--------------------------*/
+
+.regyme-food{
+    margin-top: 7rem;
+}
+.title-section{
+    text-align: center;
+}
+.title-section span{
+    font-size: 1.8rem;
+    color: var(--primery);
+}
+.title-section h2{
+    font-size: 4.4rem;
+    color: #1b1b1b;
+}
+
+.food-list{
+    max-width: 110rem;
+    width: 100%;
+}
+.splide__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.splide__track{
+    padding: 1rem;
+}
+.food-item{
+    max-width: 25rem;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(172, 172, 172, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.food-info{
+    padding: 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.food-item span {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.food-item p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.food-item img{
+    width: 150px;
+    height: 120px;
+    align-self: center;
+    border-radius: 100%;
+}
+.pricing{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pricing h6{
+    font-size: 1.8rem;
+}
+.like{
+    display: flex;
+    align-items: center;
+}
+.ri-heart-line{
+    color: #fff; 
+    background-color: #40c057; 
+    padding: 1.5rem; 
+    border-radius: 0 0 0 20px;
+}
+.all-recipes{
+   text-align:  center;
+   font-size: 1.8rem;
+}
+
+
+/*-------------------------
+    TESTIMONIAL SECTION
+--------------------------*/
+
+.section-testimonials{
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    gap: 1.5rem;
+    margin-top: 7rem;
+}
+.testimonial-title span{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--primery);
+}
+.testimonial-title h2{
+    font-size: 4.4rem;
+    color: #333;
+    margin-bottom: 8rem;
+}
+.testimonial{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+.tstimonial img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-bottom: 1.8rem;
+}
+.tstimonial blockquote{
+    font-size: 1.8rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+.tstimonial p{
+    font-size: 1.6rem;
+    color: #555;
+}
+.img-gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.gallery-item{
+    height: 100%;
+    overflow: hidden;
+}
+.img-gallery img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+}
+.img-gallery img:hover{
+    transform: scale(1.1);
+}
+
+/*-------------------------
+    PRICING SECTION
+--------------------------*/
+.section-pricing{
+    margin-top: 7rem;
+}
+.pricing-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.pricing-item{
+    width: auto;
+    background-color: #fff;
+    padding: 4rem;
+    box-shadow: rgba(172, 172, 172, 0.35) 0px 5px 15px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+.secend-price-item{
+    position: relative;
+}
+.secend-price-item::after{
+    content: "بهترین قیمت";
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: 500;
+    color: #f3f3f3;
+    background-color: #40c057;
+    padding: 0.8rem 4.8rem;
+    position: absolute;
+    top: 2.5rem;
+    left: -5rem;
+    transform: rotate(-50deg);
+}
+.header-title{
+    text-align: center;
+}
+.item-name{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #40c057;
+}
+.item-price{
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #333;
+}
+.item-price span{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.item-text{
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 4.8rem;
+}
+.btn-starter{
+    margin-top: 4.8rem;
+}
+.tax-title{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #333;
+    margin-top: 4.8rem;
+}
+.list-item span{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.list-icon{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #40c057;
+}
+.feature{
+    margin-top: 7rem;
+}
+.feature-icon{
+    width: 4rem;
+    height: 4rem;
+    padding: 1.2rem;
+    background-color: #fdf2e9;
+    border-radius: 50%;
+    margin-bottom: 1.8rem;
+    color: #40c057;
+}
+.feature-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+.feature-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/*-------------------------
+    CTA SECTION
+--------------------------*/
+.section-cta{
+    margin-top: 7rem;
+}
+.cta{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* box-shadow: 0 2.4rem 2.4rem rgba(0,0,0,0.15); */
+    border-radius: 9px;
+    overflow: hidden;
+}
+.cta-text-box{
+    padding: 4.8rem 6.4rem;
+    color: #1b1b1b;
+}
+.heading-cta{
+    font-size: 4.8rem;
+    margin-bottom: 1.8rem;
+}
+.cta-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3.2rem;
+    column-gap: 2.4rem;
+}
+.cta-form label{
+    display: block;
+    font-size: 1.8rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: inherit;
+    margin-bottom: 1.2rem;
+}
+.cta-form input ,.cta-form select{
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border: none;
+    background-color: #f3f3f3;
+    box-shadow: 0.1px 2px rgba(0,0,0,0.1);
+    border-radius: 9px;
+    padding: 1.2rem;
+}
+.cta-form input::placeholder{
+    color: #aaa;
+}
+.cta-btn{
+    background-color: #40c057;
+    color: #fdf2e9;
+    font-size: 2rem;
+    font-family: inherit;
+    border-radius: 9px;
+    border: none;
+    padding: 1.2rem;
+    align-self: end;
+    cursor: pointer;
+}
+.cta-img-box img{
+    max-height: 500px;
+}
+
+/*-------------------------
+    FOOOTER SECTION
+--------------------------*/
+.footer-section{
+    margin-top: 7rem;
+    border-top: 1px solid #eee;
+    padding: 5rem 0;
+}
+.grid--5--cols{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    gap: 4.8rem;
+}
+.logo-col{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    list-style: none;
+}
+.social-links li a{
+    font-size: 1.8rem;
+    color: #777;
+    transition: all 0.3s;
+}
+.social-links li a:hover{
+    color: #333;
+}
+.copyright{
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #777;
+    margin-top: auto;
+}
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 2.4rem;
+}
+.address-text{
+    font-size: 1.6rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 2.4rem;
+}
+.footer-link{
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #777;
+    transition: all 0.3s;
+}
+.footer-link:hover{
+    color: #333;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    list-style: none;
+}
